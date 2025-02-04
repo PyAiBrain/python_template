@@ -1,0 +1,7 @@
+    # Standard-Abhängigkeiten für das Starter-Paket
+
+argparse
+logging
+shutil
+json
+re
