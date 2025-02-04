@@ -24,6 +24,12 @@ def write_file(file_path, content):
     with open(file_path, 'w', encoding="utf-8") as f:
         f.write(content)
 
+def append_file(file_path, content):
+    """Schreibt Inhalt in eine Datei."""
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'a', encoding="utf-8") as f:
+        f.write(content)
+
 def delete_file(file_path):
     """Löscht eine Datei."""
     if os.path.exists(file_path):
