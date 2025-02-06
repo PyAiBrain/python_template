@@ -1,80 +1,87 @@
-# 🛠 Starter-Paket für Python-Projekte
+# 🛠 Starter Package for Python Projects
 
 ## 📌 Features
-✅ **Modulares Projekt mit konfigurierbarem `config.json`**  
-✅ **Erweiterter Argumentparser mit `add_arg()`**  
-✅ **Logging mit Farben & Datei-Logging**  
-✅ **Datei- und Ordneroperationen**  
-✅ **Custom-Zeitformat-Parser**  
-✅ **Einfache Installation & Nutzung**  
+- ✅ **Modular project with configurable `config.json`**  
+- ✅ **Extended argument parser with `add_arg()`**  
+- ✅ **Logging with colors & file logging**  
+- ✅ **File and folder operations**  
+- ✅ **Custom time format parser**  
+- ✅ **Easy installation & usage**  
 
 ---
 
-## 📂 **Projektstruktur**
-```
+## 📂 **Project Structure**
+===
+
 my_project/
 │── config/
-│   ├── config.json    # Konfigurationsdatei
-│   ├── loader.py      # Konfigurationsmanager
+│   ├── config.json    # Configuration file
+│   ├── loader.py      # Configuration manager
 │── core/
-│   ├── logger.py      # Logging-System
-│   ├── parser.py      # Zeitformat-Parser
+│   ├── logger.py      # Logging system
+│   ├── parser.py      # Time format parser
 │── utils/
-│   ├── file_ops.py    # Datei- und Ordneroperationen
+│   ├── file_ops.py    # File and folder operations
 │── cli/
-│   ├── arguments.py   # CLI-Argumente mit `add_arg()`
-│── main.py            # Einstiegspunkt
-│── requirements.txt   # Abhängigkeiten
-│── .env               # Umgebungsvariablen
-│── README.md          # Dokumentation
-```
+│   ├── arguments.py   # CLI arguments with `add_arg()`
+│── main.py            # Entry point
+│── requirements.txt   # Dependencies
+│── .env               # Environment variables
+│── README.md          # Documentation
+===
 
 ---
 
 ## 🚀 **Installation**
-### 1️⃣ **Virtuelle Umgebung erstellen**
-```
+### 1️⃣ **Create a Virtual Environment**
+===
+
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-```
+===
 
-### 2️⃣ **Abhängigkeiten installieren**
-```
+### 2️⃣ **Install Dependencies**
+===
+
 pip install -r requirements.txt
-```
+===
 
-### 3️⃣ **Projekt starten**
-```
+### 3️⃣ **Start the Project**
+===
+
 python main.py --debug
-```
+===
 
 ---
 
-## 🔧 **Beispiele**
+## 🔧 **Examples**
 ### 🟢 **Logging**
-```
+===
+
 python main.py --debug
-```
+===
 
-### 🟢 **Datei schreiben**
-```
-python main.py --file example.txt --text "Hallo Welt"
-```
+### 🟢 **Write to a File**
+===
 
-### 🟢 **Datei lesen**
-```
+python main.py --file example.txt --text "Hello World"
+===
+
+### 🟢 **Read from a File**
+===
+
 python main.py --file example.txt
-```
+===
 
 ---
 
-## ⚙ **Erweiterung**
-1️⃣ **Neue Argumente mit `add_arg()` hinzufügen**  
-2️⃣ **Konfiguration in `config.json` anpassen**  
-3️⃣ **Eigene Module in `core/` oder `utils/` hinzufügen**  
+## ⚙ **Extension**
+1️⃣ **Add new arguments with `add_arg()`**  
+2️⃣ **Adjust configuration in `config.json`**  
+3️⃣ **Add your own modules in `core/` or `utils/`**  
 
 ---
 
-## 📜 **Lizenz**
+## 📜 **License**
 MIT License © 2025
